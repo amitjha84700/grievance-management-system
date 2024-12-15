@@ -1,0 +1,38 @@
+Based on the provided code, here's a concise description for the  Grievance Management System  project:
+
+---
+
+###  Grievance Management System 
+
+The  Grievance Management System  is a web-based platform designed to streamline the submission, categorization, and resolution of grievances. Using advanced text processing and machine learning models, the system intelligently categorizes grievances into predefined categories such as theft, harassment, fraud, and more. Key features include:
+
+-  Automated Grievance Categorization : Utilizes the Word2Vec model and custom logic to classify grievances based on textual content.
+-  Admin Panel : Administrators can view all cases, mark grievances as resolved or unresolved, and manage user-submitted data.
+-  User Authentication : Supports secure login functionality using Firebase Authentication.
+-  Grievance Ticketing : Automatically generates a grievance ticket for each submission, downloadable as a text file.
+-  MongoDB Integration : Stores grievance data in a secure and scalable MongoDB database.
+-  Search Functionality : Allows users to search for grievances by their unique ID.
+-  Email Integration : Provides an easy option to send grievance tickets via email.
+
+###  Technologies Used 
+-  Frontend : HTML, CSS (templates for login, submission, and admin views)
+-  Backend : Python (Flask framework)
+-  Database : MongoDB (for grievance storage)
+-  Text Processing : NLTK, Word2Vec (Gensim)
+-  Authentication : Firebase Authentication
+-  Others : Ticket generation, session management, and secure admin workflows.
+
+###  Installation & Setup 
+1. Clone the repository from GitHub.
+2. Install the required Python libraries:
+   ```bash
+   pip install flask pymongo nltk gensim pyrebase
+   ```
+3. Configure Firebase credentials in the app.
+4. Run the application:
+   ```bash
+   python app.py
+   ```
+5. Access the app locally at `http://127.0.0.1:5000`.
+
+---
